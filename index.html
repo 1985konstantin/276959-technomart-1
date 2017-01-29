@@ -6,17 +6,16 @@
   <link href="css/style.css" rel="stylesheet">
   <title>Техномарт</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
     <body>
       <header class="main-header clearfix">
          <div class="header-top">
            <div class="container ">
-             <a href="#" class="top logo">
+             <a href="index.html" class="top logo">
              техномарт
              </a>
              <form class="top search" action="/echo" method="post">
-               <input type="search" name="#" placeholder="Поиск:">
+               <input type="search" name="search" placeholder="Поиск:">
              </form>
              <div class="top favorite">
                <p class="marker">Закладки:0 </p>
@@ -44,7 +43,7 @@
               <a class="cabinet" href="#">Регитсрация</a>
            </div>
            <div class="header-bottom nav">
-              <nav class="aside main-navigation">
+              <nav class="main-navigation">
                 <ul class="main-nav">
                   <li>
                     <a href="#">Главная</a>
@@ -76,23 +75,23 @@
         <section class="feauters clearfix">
            <div class="container slot">
              <div class="feauter-item ">
-               <b>Материалы</b> <a>на любой вкус</a>
+               <a href="#"><h3>Материалы на любой вкус</h3></a>
              </div>
              <div class="feauter-item ">
-               <b>инструмент на все случаи</b>
+               <a href="#"><h3>инструмент на все случаи</h3></a>
              </div>
              <div class="feauter-item ">
-               <b>техника для стройки</b>
+               <a href="#"><h3>техника для стройки</h3></a>
              </div>
              <div class="feauter-item selected">
-               <b>ПЕРФОРАТОРЫ<br>настоящие мужские игрушки</b>
+               <h2>ПЕРФОРАТОРЫ</h2><span>настоящие мужские игрушки</span>
                <a href="#">открыть каталог</a>
              </div>
              <div class="feauter-item">
-               <b>скидки 50% на 360 товаров</b>
+               <a href="#"><h3>скидки 50% на 360 товаров</h3></a>
              </div>
              <div class="feauter-item">
-               <b>доставка бесплатно</b>
+               <a href="#"><h3>доставка бесплатно</h3></a>
              </div>
            </div>
         </section>
@@ -185,32 +184,38 @@
          </div>
        </div>
        </section>
-       <section class="about-us">
-         <div class="container">
-         <span>компания "техномарт" настоящий
-               мужской шоппинг начинается здесь!
-               огромный выбо товаров для ремонта
-               и строительства не оставит равнодушными
-               любителей сэкономить на гастарбайтерах</span>
-         <span>мы можем доставить ваш товар в самые отдаленный
-               точки России! Техномарт работает со многими
-                транспортными компаниями: деловые линии автотрейдинг
-                желдорэкспидиция </span>
-         <a href="№">подробнее о компании</a>
-         <span>контакты вы можете забрать товар сами,
-               заехав в наш офис</span>
-         <div>карта</div>
-         <a href="#">заблудились?напишитк нам!</a>
-       </div>
-       </section>
     </main>
+    <div class="container">
+      <section class="about-us">
+    <h2>компания "техномарт"</h2> <p>настоящий
+          мужской шоппинг начинается здесь!
+          огромный выбо товаров для ремонта
+          и строительства не оставит равнодушными
+          любителей сэкономить на гастарбайтерах</p>
+    <p>мы можем доставить ваш товар в самые отдаленный
+          точки России! Техномарт работает со многими
+           транспортными компаниями: </p>
+           <ul>
+             <li>деловые линии</li>
+             <li> автотрейдинг</li>
+           <li>желдорэкспидиция</li>
+         </ul>
+    <a href="#">подробнее о компании</a>
+    </section>
+    <section class="map">
+    <h2>контакты</h2> <span>вы можете забрать товар сами,
+          заехав в наш офис</span>
+    <div>карта</div>
+    <a href="#">заблудились?напишитк нам!</a>
+  </section>
+  </div>
     <footer class="main-footer">
       <div class="container">
         <a href="#"> <img class="header-logo" src="#" alt="logo"></a>
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           Адрес: г. Санкт- Петербург, Б. Конюшенная, д. 19/8<br>
            +7(812) 666-02-66
-        </section>
+        </div>
         <nav>
            <ul class="top-nav">
              <li>
@@ -248,20 +253,20 @@
         </nav>
       </div>
       <div class="container">
-        <section class="footer-social">
+        <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           ©2010-2016 Компания "Техномарт"<br>все права защищены
-        </section>
-        <section class="developer">
+        </div>
+        <div class="developer">
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
           <p>Обратная связь:</p>
           <a class="btn" href="#">mail@htmlacademy.ru</a>
-        </section>
+        </div>
       </div>
       <div></div>
     </footer>

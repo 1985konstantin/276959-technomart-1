@@ -6,17 +6,16 @@
   <link href="css/style.css" rel="stylesheet">
   <title>Техномарт</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
- <link rel="stylesheet" href="css/normalize.css">
 </head>
     <body>
       <header class="main-header clearfix">
         <div class="header-top">
            <div class="container ">
-             <a href="#" class="top logo">
+             <a href="index.html" class="top logo">
                техномарт
              </a>
              <form class="top search" action="/echo" method="post">
-                <input type="search" name="#" placeholder="Поиск:">
+                <input type="search" name="search" placeholder="Поиск:">
              </form>
              <div class="top favorite">
                 <p class="marker">Закладки:0 </p>
@@ -40,11 +39,11 @@
             <div class="adress">
               г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
             </div>
-            <a class="orders" href="#">Войти</a>
-            <a class="cabinet" href="#">Регитсрация</a>
+            <a class="orders" href="#">Мои заказы</a>
+            <a class="cabinet" href="#">Личный кабинет</a>
           </div>
           <div class="header-bottom nav">
-            <nav class="aside main-navigation">
+            <nav class="main-navigation">
               <ul class="main-nav">
                  <li>
                     <a href="#">Главная</a>
@@ -75,7 +74,7 @@
      <main >
       <div class="container breadcrumbs">
         <ul class="nav-breadcrumbs">
-          <li></li>
+          <li><a href="index.html">Главная</a></li>
           <li>
             <a href="#">каталог</a>
           </li>
@@ -90,13 +89,13 @@
       <section class="drills clearfix">
         <div class="container">
           <header class="drills-header">
-            <h2>перфораторы</h2>
+            <h1>перфораторы</h1>
           </header>
           <div class="aside-left">
+            <form action="#" method="get">
              <header class="header-left">
                <h4>фильтр:</h4>
              </header>
-             <form action="#" method="get">
                <fieldset>
                  <div class="half-width">
                     <label for="dayscount">Количество дней</label>
@@ -274,34 +273,34 @@
               </article>
             </div>
             <div class="pagination">
-            <ul class="pagination">
+            <ul class="pagination-list">
                 <li>
                  1
                 </li>
                 <li>
-                 <a class="btn activ" href="#">2</a>
+                 <a class="pagination-item activ" href="#">2</a>
                 </li>
                 <li>
-                  <a class="btn" href="#">3</a>
+                  <a class="pagination-item" href="#">3</a>
                 </li>
                 <li class="next">
-                 <a class="btn" href="#">следущая</a>
+                 <a class="pagination-item" href="#">следущая</a>
                 </li>
               </ul>
             </div>
           </div>
            </div>
       </section>
-      <section class="about">
-        <div class="container">
-           <h2>пара слов о перфораторах</h2>
-           <p>Перфоратор-универсальный строительный инструмент.Предназначен для сверления и долбления отверствий в кирпиче,бетоне
-             и камне. Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели,
-             шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор "трёхрежимников":в одном устройстве будут совмещены
-             отбойный молоток и ударная дрель</p>
-        </div>
-      </section>
      </main>
+     <section class="about">
+       <div class="container">
+          <h2>пара слов о перфораторах</h2>
+          <p>Перфоратор-универсальный строительный инструмент.Предназначен для сверления и долбления отверствий в кирпиче,бетоне
+            и камне. Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели,
+            шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор "трёхрежимников":в одном устройстве будут совмещены
+            отбойный молоток и ударная дрель</p>
+       </div>
+     </section>
       <footer class="main-footer">
         <div class="container">
           <a href="#"> <img class="header-logo" src="#" alt="logo"></a>
