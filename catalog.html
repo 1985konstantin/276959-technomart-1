@@ -18,10 +18,10 @@
                 <input type="search" name="search" placeholder="Поиск:">
              </form>
              <div class="top favorite">
-                <p class="marker">Закладки:0 </p>
+                <span class="marker">Закладки:0 </span>
              </div>
              <div class="top cart">
-               <p class="bin"> Корзина:0</p>
+               <span class="bin"> Корзина:0</span>
              </div>
              <div class="top confirm">
                <a href="#" class="button-success">Оформить заказ</a>
@@ -92,59 +92,40 @@
             <h1>перфораторы</h1>
           </header>
           <div class="aside-left">
-            <form action="#" method="get">
+            <form action="#" method="post" oninput="pricecount.value=pricecount.value">
              <header class="header-left">
                <h4>фильтр:</h4>
              </header>
                <fieldset>
                  <div class="half-width">
-                    <label for="dayscount">Количество дней</label>
-                    1 <input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1"> 14
+                    <label for="price"></label>
+                  0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
                  </div>
                </fieldset>
                <fieldset>
-                 <div class="checkbox">
+                 <div class="half-width">
                    <legend>производители:</legend>
-                   <ul class="checkbox">
-                     <li>
-                       <input type="checkbox" checked>
-                         bosch
-                       </li>
-                       <li>
-                         <input type="checkbox">
-                         интерскол
-                       </li>
-                       <li>
-                         <input type="checkbox" checked>
-                         makita
-                       </li>
-                       <li>
-                         <input type="checkbox">
-                         dewalt
-                       </li>
-                       <li>
-                         <input type="checkbox">
-                         hitachi
-                       </li>
-                   </ul>
+
+                   <input id="checkbox-1" type="checkbox" checked>
+                   <label for="radio-1">bosch</label>
+                   <input id="checkbox-2" type="checkbox">
+                   <label for="checkbox-2">интерскол</label>
+                   <input id="checkbox-3" type="checkbox" checked>
+                   <label for="checkbox-3">makita</label>
+                   <input id="checkbox-4" type="checkbox">
+                   <label for="checkbox-4">dewalt</label>
+                   <input id="checkbox-5" type="checkbox">
+                   <label for="checkbox-5">hitachi</label>
+
                  </div>
                </fieldset>
              <fieldset>
-             <div class="radio">
+             <div class="half-width">
                <legend>питание:</legend>
-                 <label>
-                    <ul class="radio">
-                      <li>
-                        <input type="radio" name="items" value="" checked>аккумуляторные
-                      </li>
-                      <li>
-                         <input type="radio" name="items" value="" >сетевые
-                      </li>
-                      <li>
-                         <input type="radio" name="items" value=" ">аксессуары
-                      </li>
-                    </ul>
-                  </label>
+                  <input id="radio-1" name="radio" type="radio" checked>
+                  <label for="radio-1">аккумуляторные</label>
+                  <input id="radio-2" name="radio" type="radio">
+                  <label for="radio-2">сетевые</label>
              </div>
            </fieldset>
              <div class="catalog-btn">
