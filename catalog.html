@@ -2,18 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <title>Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
-  <title>Техномарт</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
 </head>
     <body>
       <header class="main-header clearfix">
         <div class="header-top">
            <div class="container ">
-             <a href="index.html" class="top logo">
-               техномарт
-             </a>
+             <a href="index.html" class="top logo"> техномарт</a>
              <form class="top search" action="/echo" method="post">
                 <input type="search" name="search" placeholder="Поиск:">
              </form>
@@ -34,13 +32,21 @@
               Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
             </div>
             <div class="contact">
+              <div class="contact-adress">
               +7(812)555-05-55
-            </div>
-            <div class="adress">
+              </div>
+            <div class="contact-adress">
               г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
+            </div>
+            </div>
+            <div class="user">
+            <div class="user-plate">
+            <a href="#" class="user-name">равшан джамшутович</a>
+            <a href="#" class="user-logout"></a>
             </div>
             <a class="orders" href="#">Мои заказы</a>
             <a class="cabinet" href="#">Личный кабинет</a>
+            </div>
           </div>
           <div class="header-bottom nav">
             <nav class="main-navigation">
@@ -86,28 +92,22 @@
           </li>
           </ul>
       </div>
-      <section class="drills clearfix">
+      <div class="drills clearfix">
         <div class="container">
-          <header class="drills-header">
             <h1>перфораторы</h1>
-          </header>
           <div class="aside-left">
             <form action="#" method="post" oninput="pricecount.value=pricecount.value">
-             <header class="header-left">
                <h4>фильтр:</h4>
-             </header>
                <fieldset>
-                 <div class="half-width">
                     <label for="price"></label>
                   0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
-                 </div>
                </fieldset>
                <fieldset>
                  <div class="half-width">
                    <legend>производители:</legend>
 
                    <input id="checkbox-1" type="checkbox" checked>
-                   <label for="radio-1">bosch</label>
+                   <label for="checkbox-1">bosch</label>
                    <input id="checkbox-2" type="checkbox">
                    <label for="checkbox-2">интерскол</label>
                    <input id="checkbox-3" type="checkbox" checked>
@@ -134,14 +134,12 @@
             </form>
           </div>
           <div class="aside-right clearfix">
-            <header class="header-right">
                 <p>сортировка:</p>
                 <p>по цене</p>
                 <a href="#">по типу</a>
                 <a href="#">по функционалу</a>
                 <span class="triangle-up"></span>
                 <span class="triangle-down"></span>
-            </header>
             <div class="catalog-items clearfix">
               <article class="catalog-item">
                 <a>
@@ -271,7 +269,7 @@
             </div>
           </div>
            </div>
-      </section>
+      </div>
      </main>
      <section class="about">
        <div class="container">
@@ -307,8 +305,6 @@
                  <a href="#">Контакты</a>
                </li>
               </ul>
-          </nav>
-          <nav>
             <ul class="bottom-nav">
               <li>
                 <a href="#">Материалы</a>
@@ -341,7 +337,6 @@
             <a class="btn" href="#">mail@htmlacademy.ru</a>
           </section>
         </div>
-        <div></div>
       </footer>
     </body>
 </html>

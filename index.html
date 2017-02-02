@@ -17,12 +17,12 @@
              <form class="top search" action="/echo" method="post">
                <input type="search" name="search" placeholder="Поиск:">
              </form>
-             <div class="top favorite">
+             <span class="top favorite">
                <p class="marker">Закладки:0 </p>
-             </div>
-             <div class="top cart">
+             </span>
+             <span class="top cart">
                <p class="bin"> Корзина:0</p>
-             </div>
+             </span>
              <div class="top confirm">
                <a href="#" class="button-success">Оформить заказ</a>
              </div>
@@ -34,10 +34,12 @@
                 Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
               </div>
               <div class="contact">
-              +7(812)555-05-55
+                <div class="contact-adress">
+                +7(812)555-05-55
+                </div>
+              <div class="contact-adress">
+                г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
               </div>
-              <div class="adress">
-              г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
               </div>
               <a class="orders" href="#">Войти</a>
               <a class="cabinet" href="#">Регитсрация</a>
@@ -97,41 +99,65 @@
         </section>
        <section class="items clearfix">
          <div class="container ">
-            <div class="header-item">
+            <header class="header-item">
                <h3>популярные товары:</h3>
                <a href="#">все популярные товары</a>
-            </div>
-            <div class="item-block">
-               <b>перфоратор bosch
-                 bfg 900d</b>
-               <b>32500р</b>
-               <a href="#">25500р.</a>
-            </div>
-            <div class="item-block">
-               <b>перфоратор bosch
-                 bfg 300d</b>
-               <b>22500р</b>
-               <a href="#">15500р.</a>
-            </div>
-            <div class="item-block">
-              <b>перфоратор bosch
-                 bfg 600d</b>
-              <b>30500р</b>
-              <a href="#">25500р.</a>
-            </div>
-            <div class="item-block">
-              <b>перфоратор bosch
-                bfg 200d</b>
-              <a href="#">12500р.</a>
-            </div>
+            </header>
+            <article class="catalog-item">
+              <a>
+                <img src="img/drill.jpg">
+                <h3>Перфоратор bosch bfg 9000</h3>
+                <span>30500 р.</span>
+                <span>25500 р.</span>
+              </a>
+              <div class="button">
+                <button>купить</button>
+                <button>закладки</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <a>
+                <img src="img/drill.jpg">
+                <h3>Перфоратор bosch bfg 3000</h3>
+                <span>22500 р.</span>
+                <span>15500 р.</span>
+              </a>
+              <div class="button">
+                <button>купить</button>
+                <button>закладки</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <a>
+                <img src="img/drill.jpg">
+                <h3>Перфоратор bosch bfg 6000</h3>
+                <span>30500 р.</span>
+                <span>25500 р.</span>
+              </a>
+              <div class="button">
+                <button>купить</button>
+                <button>закладки</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <a>
+                <img src="img/drill.jpg">
+                <h3>Перфоратор bosch bfg 2000</h3>
+                <span>12500 р.</span>
+              </a>
+              <div class="button">
+                 <button>купить</button>
+                 <button>закладки</button>
+              </div>
+            </article>
          </div>
        </section>
        <section class="producers clearfix">
          <div class="container pro">
-            <div class="header-producer">
+            <header class="header-producer">
               <h3>популярные производители:</h3>
               <a href="#">все популярные производители</a>
-            </div>
+            </header>
             <div class="producer-block">
               <a href="#">bosch</a>
             </div>
@@ -206,7 +232,9 @@
     <h2>контакты</h2> <span>вы можете забрать товар сами,
           заехав в наш офис</span>
     <div>карта</div>
-    <a href="#">заблудились?напишитк нам!</a>
+    <div class="catalog-btn">
+      <input class="btn" type="submit" value="заблудились?напишите нам!">
+    </div>
   </section>
   </div>
     <footer class="main-footer">
@@ -234,8 +262,6 @@
                <a href="#">Контакты</a>
              </li>
             </ul>
-        </nav>
-        <nav>
           <ul class="bottom-nav">
             <li>
               <a href="#">Материалы</a>
@@ -268,7 +294,6 @@
           <a class="btn" href="#">mail@htmlacademy.ru</a>
         </div>
       </div>
-      <div></div>
     </footer>
   </body>
 </html>
