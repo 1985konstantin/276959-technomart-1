@@ -29,26 +29,22 @@
         <div class="header-bottom">
           <div class="container introduction">
             <div class="intro">
-              Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
+               Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
             </div>
             <div class="contact">
-              <div class="contact-adress">
-              +7(812)555-05-55
+              <div class="contact-tell">
+                +7(812)555-05-55
               </div>
-            <div class="contact-adress">
-              г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
+              <div class="contact-adress">
+                г.Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
+              </div>
             </div>
-            </div>
-            <div class="user">
             <div class="user-plate">
-            <a href="#" class="user-name">равшан джамшутович</a>
-            <a href="#" class="user-logout"></a>
+              <a class="user-name" href="#" >равшан джамшутович</a>
+              <a class="orders" href="#">Мои заказы</a>
+              <a class="cabinet" href="#">Личный кабинет</a>
             </div>
-            <a class="orders" href="#">Мои заказы</a>
-            <a class="cabinet" href="#">Личный кабинет</a>
-            </div>
-          </div>
-          <div class="header-bottom nav">
+          <div class="bottom-nav">
             <nav class="main-navigation">
               <ul class="main-nav">
                  <li>
@@ -75,11 +71,12 @@
               </ul>
             </nav>
           </div>
+         </div>
         </div>
       </header>
      <main >
       <div class="container breadcrumbs">
-        <ul class="nav-breadcrumbs">
+        <ul>
           <li><a href="index.html">Главная</a></li>
           <li>
             <a href="#">каталог</a>
@@ -96,16 +93,16 @@
         <div class="container">
             <h1>перфораторы</h1>
           <div class="aside-left">
+            <div class="sub-aside">
+              <span>фильтр:</span>
+            </div>
             <form action="#" method="post" oninput="pricecount.value=pricecount.value">
-               <h4>фильтр:</h4>
                <fieldset>
                     <label for="price"></label>
                   0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
                </fieldset>
                <fieldset>
-                 <div class="half-width">
                    <legend>производители:</legend>
-
                    <input id="checkbox-1" type="checkbox" checked>
                    <label for="checkbox-1">bosch</label>
                    <input id="checkbox-2" type="checkbox">
@@ -116,31 +113,27 @@
                    <label for="checkbox-4">dewalt</label>
                    <input id="checkbox-5" type="checkbox">
                    <label for="checkbox-5">hitachi</label>
-
-                 </div>
                </fieldset>
              <fieldset>
-             <div class="half-width">
                <legend>питание:</legend>
                   <input id="radio-1" name="radio" type="radio" checked>
                   <label for="radio-1">аккумуляторные</label>
                   <input id="radio-2" name="radio" type="radio">
                   <label for="radio-2">сетевые</label>
-             </div>
            </fieldset>
-             <div class="catalog-btn">
                 <input type="submit" value="показать">
-             </div>
             </form>
           </div>
-          <div class="aside-right clearfix">
-                <p>сортировка:</p>
-                <p>по цене</p>
+          <div class="aside-right">
+            <div class="sub-aside">
+                <span>сортировка:</span>
+                <span>по цене</span>
                 <a href="#">по типу</a>
                 <a href="#">по функционалу</a>
                 <span class="triangle-up"></span>
                 <span class="triangle-down"></span>
-            <div class="catalog-items clearfix">
+            </div>
+            <div class="catalog-items">
               <article class="catalog-item">
                 <a>
                   <img src="img/drill.jpg">
@@ -176,7 +169,6 @@
                    <button>закладки</button>
                 </div>
               </article>
-            </div>
             <article class="catalog-item">
               <a>
                 <img src="img/drill.jpg">
@@ -201,7 +193,6 @@
                 <button>закладки</button>
               </div>
             </article>
-            <div class="catalog-items">
               <article class="catalog-item">
                 <a>
                   <img src="img/drill.jpg">
@@ -213,8 +204,6 @@
                   <button>закладки</button>
                 </div>
               </article>
-             </div>
-            <div class="catalog-items">
               <article class="catalog-item">
                 <a>
                   <img src="img/drill.jpg">
@@ -281,62 +270,72 @@
        </div>
      </section>
       <footer class="main-footer">
-        <div class="container">
-          <a href="#"> <img class="header-logo" src="#" alt="logo"></a>
-          <section class="footer-contacts">
-            Адрес: г. Санкт- Петербург, Б. Конюшенная, д. 19/8<br>
-             +7(812) 666-02-66
-          </section>
-          <nav>
-             <ul class="top-nav">
-               <li>
-                 <a href="#">Компания</a>
-               </li>
-               <li>
-                 <a href="#">Новости</a>
-               </li>
-               <li>
-                 <a href="#">Каталог</a>
-               </li>
-               <li>
-                 <a href="#">Доставка</a>
-               </li>
-               <li>
-                 <a href="#">Контакты</a>
-               </li>
-              </ul>
-            <ul class="bottom-nav">
-              <li>
-                <a href="#">Материалы</a>
-              </li>
-              <li>
-                <a href="#">Техника</a>
-              </li>
-              <li>
-                <a href="#">Инструмент</a>
-              </li>
-              <li>
-                <a href="#">Спецпредложения</a>
-              </li>
-             </ul>
-          </nav>
+        <div class="footer-top">
+          <div class="container clearfix">
+            <div class="layout-left">
+              <a href="index.html" class="top logo"> техномарт</a>
+              <section class="footer-contacts">
+                Адрес: г. Санкт- Петербург, Б. Конюшенная, д. 19/8<br>
+                +7(812) 666-02-66
+              </section>
+            </div>
+            <div class="layout-right">
+             <nav class="footer-top-nav">
+               <ul>
+                 <li>
+                   <a href="#">Компания</a>
+                 </li>
+                 <li>
+                   <a href="#">Новости</a>
+                 </li>
+                 <li>
+                   <a href="#">Каталог</a>
+                 </li>
+                 <li>
+                   <a href="#">Доставка</a>
+                 </li>
+                 <li>
+                   <a href="#">Контакты</a>
+                 </li>
+               </ul>
+            </nav>
+               <nav class="footer-bottom-nav">
+                 <ul>
+                   <li>
+                     <a href="#">Материалы</a>
+                   </li>
+                   <li>
+                     <a href="#">Техника</a>
+                   </li>
+                   <li>
+                    <a href="#">Инструмент</a>
+                   </li>
+                   <li>
+                     <a href="#">Спецпредложения</a>
+                   </li>
+                 </ul>
+               </nav>
+            </div>
+          </div>
         </div>
-        <div class="container">
+          <div class="footer-bottom">
+          <div class="container clearfix">
+            <section class="footer-copyright">
+              ©2010-2016 Компания "Техномарт"<br>все права защищены
+            </section>
           <section class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
-          <section class="footer-copyright">
-            ©2010-2016 Компания "Техномарт"<br>все права защищены
-          </section>
           <section class="developer">
-            <p>Разработано:</p>
+            <span>Разработано:</span>
             <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
-            <p>Обратная связь:</p>
+            <span>Обратная связь:</span>
             <a class="btn" href="#">mail@htmlacademy.ru</a>
           </section>
         </div>
+      </div>
       </footer>
     </body>
 </html>
