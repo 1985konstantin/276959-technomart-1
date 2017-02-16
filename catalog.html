@@ -5,7 +5,7 @@
   <title>Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
     <body>
       <header class="main-header">
@@ -22,15 +22,17 @@
            </div>
             <div class="container">
               <div class="header-content">
-               <p class="header-description">Интернет-магазин строительных&nbsp;материалов и&nbsp;инструментов для ремонта</p>
+               <p class="header-description">Интернет-магазин строительных материалов и&nbsp;инструментов для&nbsp;ремонта</p>
                <div class="header-contact">
                 <a href="+78125550555" class="header-phone">+7 (812) 555-05-55</a>
-                <p class="header-address">г.&nbsp;Санкт-Петербург, ул.&nbsp;Б.&thinsp;Конюшенная,&nbsp;д.19/8</p>
+                <p class="header-address">г. Санкт-Петербург, ул.&nbsp;Б.&thinsp;Конюшенная,&nbsp;д.19/8</p>
                </div>
-               <div class="auth">
-                <a href="#" class="header-login">Войти</a>
-                <a href="#" class="header-register">Региcтрация</a>
-               </div>
+               <div class="signed">
+               <a class="signed user-data">Равшан Джамшутович</a>
+               <a href="#" class="sign-out"></a>
+               <a href="#" class="signed ordered">Мои заказы</a>
+               <a href="#" class="signed private">Личный кабинет</a>
+             </div>
               </div>
               <nav class="header-nav">
                <ul>
@@ -66,7 +68,6 @@
        <a href="#">инструмент</a>
        <span>перфораторы</span>
       </div>
-
         <div class="container clearfix">
             <h1>перфораторы</h1>
           <div class="aside-left">
@@ -119,15 +120,17 @@
                   <label for="radio-2">сетевые</label>
                 </div>
            </fieldset>
-                <input type="submit" value="показать">
+                <input type="submit" class="dispatch" value="показать">
             </form>
           </div>
           <div class="aside-right">
             <div class="sub-aside">
                 <div class="sort-bar">сортировка:</div>
                 <span class="price">по цене</span>
-                <a href="#" class="type">по типу</a>
-                <a href="#" class="function">по функционалу</a>
+                <a href="#" class="sub type">по типу</a>
+                <a href="#" class="sub function">по функционалу</a>
+                <a href="#" class="triangle sort-up"></a>
+                <a href="#" class="triangle sort-down"></a>
             </div>
             <div class="catalog-items">
               <article class="catalog-item">
@@ -137,7 +140,7 @@
                   <span>22500 р.</span>
                   <p class="actual">15500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -149,7 +152,7 @@
                   <span>30500 р.</span>
                   <p class="actual">25500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -158,9 +161,9 @@
                 <a>
                   <img src="img/bfg-2000.png" width="127" height="112">
                   <h3>Перфоратор bosch bfg 2000</h3>
-                  <p class="actual">12500 р.</p>
+                  <p class="actual bfg-2000">12500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -172,7 +175,7 @@
                 <span>22500 р.</span>
                 <p class="actual">15500 р.</p>
               </a>
-              <div class="button">
+              <div class="custom-card">
                 <button class="choice top">купить</button>
                 <button class="choice bottom">закладки</button>
               </div>
@@ -184,7 +187,7 @@
                 <span>30500 р.</span>
                 <p class="actual">25500 р.</p>
               </a>
-              <div class="button">
+              <div class="custom-card">
                 <button class="choice top">купить</button>
                 <button class="choice bottom">закладки</button>
               </div>
@@ -193,9 +196,9 @@
                 <a>
                   <img src="img/bfg-2000.png" width="127" height="112">
                   <h3>Перфоратор bosch bfg 2000</h3>
-                  <p class="actual">12500 р.</p>
+                  <p class="actual bfg-2000">12500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -207,7 +210,7 @@
                   <span>22500 р.</span>
                   <p class="actual">15500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -219,7 +222,7 @@
                   <span>30500 р.</span>
                   <p class="actual">25500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -228,9 +231,9 @@
                 <a>
                   <img src="img/bfg-2000.png" >
                   <h3>Перфоратор bosch bfg 2000</h3>
-                  <p class="actual">12500 р.</p>
+                  <p class="actual bfg-2000">12500 р.</p>
                 </a>
-                <div class="button">
+                <div class="custom-card">
                   <button class="choice top">купить</button>
                   <button class="choice bottom">закладки</button>
                 </div>
@@ -248,10 +251,10 @@
      <section class="about">
        <div class="container">
           <h2>пара слов о перфораторах</h2>
-          <div>Перфоратор-универсальный строительный инструмент.Предназначен для сверления и долбления отверствий в кирпиче,бетоне
+          <p>Перфоратор-универсальный строительный инструмент.Предназначен для сверления и долбления отверствий в кирпиче,бетоне
             и камне.<br> Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели,
             шуруповёрта и отбойного молотка. В<br> ассортиментном ряду есть выбор "трёхрежимников":в одном устройстве будут совмещены
-            отбойный молоток и ударная дрель</div>
+            отбойный молоток и ударная дрель</p>
        </div>
      </section>
      <footer class="main-footer">
