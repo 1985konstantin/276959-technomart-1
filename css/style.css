@@ -192,7 +192,6 @@ footer .header-logo{
 .header-contact{
   width: 270px;
   text-align: center;
-  margin-right: 50px;
 }
 .header-phone{
   display: block;
@@ -213,7 +212,10 @@ footer .header-logo{
 }
 .signed{
   width: 300px;
+  position: relative;
+  margin-left: auto;
 }
+
 .user-data{
   font-size: 21px;
   line-height: 18px;
@@ -226,23 +228,35 @@ footer .header-logo{
   box-sizing: border-box;
   margin-bottom: 10px;
   position: relative;
+  margin-right: 45px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sign-out{
+  position: absolute;
+  width: 45px;
+  height:45;
+  top:0px;
+  right:0px;
+  background-color: #fff;
 }
 .user-data::before{
    content: "";
    position: absolute;
    width: 20px;
    height: 18px;
-   top: 12px;
-   left: 16px;
+   top: 13px;
+   left: 14px;
    background:url(../img/.icon-user.png)  no-repeat center top ;
 }
 .sign-out::before{
    content: "";
    position: absolute;
-   width: 30px;
-   height: 30px;
-   top: 12px;
-   right: 20px;
+   width: 21px;
+   height: 17px;
+   top: 14px;
+   left: 14px;
    background:url(../img/.icon-logout.png)  no-repeat center top ;
 }
 .user-data::after{
@@ -254,21 +268,23 @@ footer .header-logo{
    right: 183px;
    background:url(../img/Shape.png)  no-repeat center top ;
  }
-.ordered{
+.user-link{
 color: #32425c;
-padding-left: 19px;
-padding-right: 19px;
-padding-top: 5px;
 box-sizing: border-box;
-
+line-height: 18px;
 }
-.private{
-color: #32425c;
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 5px;
-box-sizing: border-box;
-
+.ordered{
+margin-left: 18px;
+}
+.dot{
+  width:5px;
+  height: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #32425c;
+  margin-left: 11px;
+  margin-right: 11px;
 }
 .header-login,
 .header-register{
