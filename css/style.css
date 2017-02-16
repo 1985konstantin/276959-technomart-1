@@ -35,7 +35,7 @@ body{
   text-decoration: none;
   font-size: 24px;
   line-height: 1;
-  padding-top: 9px;
+  padding-top: 11px;
   box-sizing: border-box;
   text-align: center;
   background-color: #ee3643;
@@ -173,8 +173,12 @@ footer .header-logo{
   align-items: flex-start;
   background-color: #f1f5f7;
 }
+.auth{
+  font-size: 0px;
+  margin-left: auto;
+}
 .header-description{
-  margin-top: 0;
+  margin-top: 3px;
   margin-bottom: 0;
   width: 320px;
   padding-left: 53px;
@@ -189,11 +193,10 @@ footer .header-logo{
   width: 270px;
   text-align: center;
   margin-right: 50px;
-
 }
 .header-phone{
   display: block;
-  padding: 9px 9px;
+  padding: 9px 0 9px 22px;
   font-size: 21px;
   line-height: 1;
   color: #e9292a;
@@ -202,12 +205,11 @@ footer .header-logo{
   box-sizing: border-box;
 }
 .header-address{
-  margin-top: 0;
+  margin-top: 4px;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  margin-top: 3px;
 }
 .signed{
   width: 300px;
@@ -268,15 +270,16 @@ padding-top: 5px;
 box-sizing: border-box;
 
 }
-
 .header-login,
 .header-register{
-  padding: 12px 25px;
+  padding: 12px 24px;
   font-size: 21px;
   line-height: 1;
   background-color: #fff;
   color: #000;
-  margin-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
 }
 .header-nav{
