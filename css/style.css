@@ -372,10 +372,6 @@ margin-left: 18px;
   background-color: #1d2739;
   color: #8e939c;
 }
-
-.main-layer{
-  background-color: #ffffff;
-}
 .features{
   font-size: 24px;
   padding-bottom: 33px;
@@ -728,16 +724,19 @@ box-shadow: -4px 4px 25px -8px rgba(41, 52, 73, 0.5)
   background-color: #f2f6f8;
 }
 .deliverry{
-
+z-index: 1;
+display: none;
 }
 .credit{
-  visibility: hidden;
+
+  z-index: 2
 }
 .service .container{
   min-height: 522px;
 }
 .warranty{
-  visibility: hidden;
+display: none;
+  z-index: 3;
 }
 .advert{
   float:left;
@@ -1071,149 +1070,66 @@ text-transform: uppercase;
 font-family: "PT Sans";
 font-weight: bold;
 }
-.checkbox-layer{
-  padding-bottom: 12px;
-  margin-bottom: 19px;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-.checkbox{
+.checkbox,
+.radio {
   position: relative;
- box-sizing: border-box;
+  padding-left: 35px;
+  margin-bottom: 10px;
 }
-.checkbox-area{
-margin-top: -17px;
-}
-.checkbox input{
- overflow: hidden;
- position: absolute;
- border:0;
- clip-path:inset(100%);
- rect:(0 0 0 0);
-}
-.checkbox label{
-display: inline-block;
- padding-left: 34px;
- text-transform: uppercase;
- font-family: PT Sans;
- font-weight: 400;
- font-size: 15px;
- line-height: 20px;
- padding-top: 10px;
- padding-bottom: 10px;
-}
-.checkbox label::before{
-content: "";
-position: absolute;
-top: 12px;
-left: 3px;
-width: 17px;
-height: 17px;
-margin-right: 8px;
-vertical-align: middle;
-border: 1px solid #ffffff;
-box-shadow: 0 0 0 3px #bdc3c7;
-border-radius: 2px;
-box-sizing: border-box;
-}
-.checkbox label::after{
-content: "";
-position: absolute;
-visibility: hidden;
-top: -2px;
-left: -4px;
-width:40px;
-height:40px;
-background:url(../img/Checkmark-20.png) no-repeat center;
-}
-.checkbox input:checked+label::after{
-  visibility: visible;
-}
-.checkbox label:hover{
-  opacity: 0.8;
-}
-.checkbox label:active{
-  opacity: 0.5;
-}
-input[type="checkbox"]:disabled + label{
-  opacity: 0.4;
-}
-.source{
-  color: #000000;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-family: "PT Sans";
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  }
-  .radio-area{
-    margin-top: -18px;
-  }
-.radio{
-  box-sizing: border-box;
-  position: relative;
-}
-.radio input{
+
+.checkbox input,
+.radio input {
   overflow: hidden;
   position: absolute;
   margin: -1px;
   padding: 0;
   width: 1px;
   height: 1px;
-  border:0;
-  clip-path:inset(100%);
-  rect:(0 0 0 0);
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
 }
-.radio label{
-display: inline-block;
- padding-left: 34px;
- text-transform: uppercase;
- font-family: PT Sans;
- font-weight: 400;
- font-size: 14px;
- line-height: 20px;
- padding-top: 10px;
- padding-bottom: 10px;
+.checkbox label,
+.radio label {
+  font-size: 16px;
+  line-height: 20px;
+  font-family:"PT Sans";
+  font-weight: 400;
+  text-transform: uppercase;
 }
-.radio label::before{
-content: "";
-position: absolute;
-box-sizing: border-box;
-top: 12px;
-left: 3px;
-width: 17px;
-height: 18px;
-margin-right: 8px;
-vertical-align: middle;
-border: 3px solid #ffffff;
-box-shadow: 0 0 0 3px #bdc3c7;
-border-radius: 50%;
+.checkbox label::before,
+.radio label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-image: url(../img/form-controls.png);
+  transform: translateY(-50%);
+  opacity: 0.25;
 }
-.radio label::after{
-content: "";
-position: absolute;
-visibility: hidden;
-top: 16px;
-left: 7px;
-width:9px;
-height:9px;
-background-color: #bdc3c7;
-border-radius: 50%;
+.checkbox label::before {
+  width: 27px;
+  height: 23px;
+  background-position: -2px -0px;
 }
-.radio input:checked+label::after{
-  visibility: visible;
+.radio label::before {
+  width: 25px;
+  height: 25px;
+  background-position: -2px -50px;
 }
-.radio label:hover{
-  opacity: 0.8;
+.checkbox input:checked + label::before {
+  background-position: -2px -25px;
 }
-.radio label:active{
-  opacity: 0.5;
+.radio input:checked + label::before {
+  background-position: -2px -77px;
 }
-input[type="radio"]:disabled + label{
-  opacity: 0.4;
+.checkbox label:hover::before,
+.radio label:hover::before {
+  opacity: 0.3;
 }
-fieldset:last-child{
-  padding-bottom: 0px;
+.checkbox input:disabled + label::before,
+.radio input:disabled + label::before {
+  opacity: 0.1;
 }
 .dispatch{
   box-sizing: border-box;
