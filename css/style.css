@@ -267,6 +267,7 @@ background: url(../img/icon-search.png)  no-repeat center top ;
   font-size: 0px;
   margin-left: auto;
 }
+
 .header-description{
   margin-top: 3px;
   margin-bottom: 0;
@@ -292,6 +293,8 @@ background: url(../img/icon-search.png)  no-repeat center top ;
   text-decoration: none;
   border: 3px solid #fff;
   box-sizing: border-box;
+  background: url(../img/icon-phone.png)  no-repeat center top ;
+  background-position: 14px;
 }
 .header-address{
   margin-top: 4px;
@@ -340,6 +343,24 @@ background: url(../img/icon-search.png)  no-repeat center top ;
    left: 14px;
    background:url(../img/icon-user.png)  no-repeat center top ;
 }
+.user-data:hover::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 13px;
+  left: 14px;
+  background:url(../img/icon-user-hover.png)  no-repeat center top ;
+}
+.user-data:active::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 13px;
+  left: 14px;
+  background:url(../img/icon-user-active.png)  no-repeat center top ;
+}
 .sign-out::before{
    content: "";
    position: absolute;
@@ -348,6 +369,24 @@ background: url(../img/icon-search.png)  no-repeat center top ;
    top: 14px;
    left: 14px;
    background:url(../img/icon-logout.png)  no-repeat center top ;
+}
+.sign-out:hover::before{
+   content: "";
+   position: absolute;
+   width: 21px;
+   height: 17px;
+   top: 14px;
+   left: 14px;
+   background:url(../img/icon-logout-hover.png)  no-repeat center top ;
+}
+.sign-out:active::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 13px;
+  left: 14px;
+  background:url(../img/icon-logout.png)  no-repeat center top ;
 }
 .user-data::after{
    content: "";
@@ -365,6 +404,12 @@ line-height: 18px;
 }
 .ordered{
 margin-left: 18px;
+}
+.user-link:hover{
+  color: #ee3643;
+}
+.user-link:active{
+color: #bfc6ce
 }
 .dot{
   width:5px;
@@ -387,6 +432,14 @@ margin-left: 18px;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
+}
+.header-login:hover,
+.header-register:hover{
+  color: #ee3643;
+}
+.header-register:active,
+.header-login:active{
+  background: #c5c5c5;
 }
 .header-nav{
   min-height: 55px;
