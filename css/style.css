@@ -103,12 +103,16 @@ footer .header-logo{
   outline: none;
   background-color: inherit;
   color: inherit;
-  position: relative;
-  background-image: url(../img/icon-search-focus.png) no-repeat center;
- }
+background: url(../img/icon-user.png)  no-repeat center top ;
  }
  .header-search input::-webkit-input-placeholder {
   color: #fff;
+}
+.header-search input{
+background: url(../img/icon-search.png)  no-repeat center top ;
+    background-position: 16px;
+    padding-left: 49px;
+    height: 42px;
 }
 .header-search input::-moz-placeholder {
   color: #fff;
@@ -118,10 +122,17 @@ footer .header-logo{
 }
 .header-search input:hover{
   background-color: #212a3a;
+  background: url(../img/icon-search-hover.png)  no-repeat center top ;
+  background-position: 16px;
+  padding-left: 49px;
+  height: 42px;
 }
 .header-search input:focus{
-  background-color: #ffffff;
   color:#000000;
+  background: #ffffff url(../img/icon-search-focus.png)  no-repeat center top ;
+  background-position: 16px;
+  padding-left: 49px;
+  height: 42px;
 }
 .header-search input:focus::-webkit-input-placeholder {
  color: #333333;
@@ -1233,6 +1244,14 @@ border: transparent;
  border-bottom: 10px solid #ee3643;
  border-right: 6.5px solid transparent;
 }
+:hover.sort-up::after{
+  top: -1px;
+  right: -1px;
+  border-top:9px solid transparent;
+  border-left: 6.5px solid transparent;
+  border-bottom: 10px solid #000000;
+  border-right: 6.5px solid transparent;
+}
 .sort-down::after{
   content: "";
 position: absolute;
@@ -1240,8 +1259,23 @@ top: 7px;
 right:3px;
 border-top:10px solid #c6c2bd;
 border-left: 6.5px solid transparent;
-
 border-right: 6.5px solid transparent;
+}
+:hover.sort-down::after{
+  top: 7px;
+  right:3px;
+  border-top:9px solid transparent;
+  border-top:10px solid #000;
+  border-left: 6.5px solid transparent;
+  border-right: 6.5px solid transparent;
+}
+:active.sort-down::after{
+  top: 7px;
+  right:3px;
+  border-top:9px solid transparent;
+  border-top:10px solid red;
+  border-left: 6.5px solid transparent;
+  border-right: 6.5px solid transparent;
 }
 .sub-aside .type:hover,
 .sub-aside .function:hover{
