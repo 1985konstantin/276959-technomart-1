@@ -79,7 +79,9 @@ body{
 footer .header-logo{
   min-height: 63px;
   color:#fff;
-  padding-top: 18px;
+  padding-top: 19px;
+  font-size: 30px;
+line-height: 30px;
 }
 .header-logo:hover{
   background-color: #ca2c37;
@@ -306,18 +308,20 @@ background: url(../img/icon-search.png)  no-repeat center top ;
 .user-data{
   font-size: 21px;
   background-color: #fff;
+  color: #000;
   line-height: 1;
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 48px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   position: relative;
   margin-right: 45px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-decoration: none;
 }
 .sign-out{
   position: absolute;
@@ -387,7 +391,7 @@ margin-left: 18px;
 .header-nav{
   min-height: 55px;
   margin-top: 39px;
-  box-shadow: 0 5px 0 #293449;
+  box-shadow: 0 4px 0 #293449;
 }
 .header-nav ul{
   margin: 0;
@@ -425,7 +429,7 @@ margin-left: 18px;
 .features{
   font-size: 24px;
   padding-bottom: 33px;
-  margin-top: 61px;
+  margin-top: 59px;
 }
 .feature{
   width:300px;
@@ -433,7 +437,7 @@ margin-left: 18px;
   color: black;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-left: 23px;
   float: left;
   box-sizing: border-box;
@@ -669,7 +673,7 @@ box-sizing: border-box;
 }
 .feature .btn{
   display: block;
-  margin-top: 4px;
+  margin-top: 9px;
   padding-top: 11px;
   box-sizing: border-box;
   width: 135px;
@@ -819,7 +823,7 @@ display: none;
   background-color: #32425c;
   color: #fff;
   min-height: 62px;
-  font-size: 21;
+  font-size: 21px;
   line-height: 30px;
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
@@ -882,7 +886,7 @@ line-height: 24px;
 }
 .about-us h2{
   font-family: "Cuprum";
-  font-weight: "Regular";
+  font-weight: normal;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -969,7 +973,7 @@ text-transform: uppercase;
 text-decoration: none;
 padding-right: 39px;
 position: relative;
-height: 60px;
+height: 57px;
 padding-top: 19px;
 }
 .link:after{
@@ -1007,7 +1011,7 @@ padding-top: 19px;
   height:88px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 26px;
+  padding-top: 30px;
   padding-left: 28px;
   box-sizing: border-box;
   color: #32425c;
@@ -1020,7 +1024,7 @@ padding-top: 19px;
 .aside-left{
   float: left;
   width: 220px;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 .header-left{
   height: 40px;
@@ -1043,7 +1047,7 @@ padding-top: 19px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     overflow:hidden;
-    margin-top: -16px;
+    margin-top: -15px;
 }
 .scale{
     margin-top:39px;
@@ -1083,7 +1087,7 @@ padding-top: 19px;
 .min-price,
 .max-price{
     width:75px;
-    padding:7px 13px;
+    padding:9px 13px;
     border:none;
     background:#f7f3ec;
     font-size:17px;
@@ -1204,7 +1208,7 @@ font-weight: bold;
 .aside-right{
   float:right;
   width: 700px;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 .sub-aside{
   background-color: #f7f3ec;
@@ -1220,18 +1224,18 @@ font-weight: bold;
 }
 .sub-aside a{
   text-decoration: none;
-  padding-top: 10px;
+  padding-top: 12px;
   height: 15px;
 }
 .sort-bar{
  padding-left: 19px;
  padding-right: 30px;
- padding-top: 8px;
+ padding-top: 10px;
  padding-bottom: 10px;
  margin-right: 110px;
  font-family: "PT Sans";
  font-weight: 400;
- font-style: 13px;
+ font-size: 13px;
 }
 .sub{
   color: rgba(0, 0, 0, 0.3);
@@ -1240,10 +1244,10 @@ font-weight: bold;
 .price{
  margin-right: 70px;
  color:red;
- padding-top: 8px;
+ padding-top: 12px;
  font-family: "PT Sans";
  font-weight: 400;
- font-size: 13;
+ font-size: 13px;
  line-height: 18px;
 
 }
@@ -1349,23 +1353,25 @@ border-right: 6.5px solid transparent;
   justify-content: space-between;
 }
 .catalog-item{
-  margin-top: 19px;
+  margin-top: 20px;
   position: relative;
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 220px;
-  min-height: 330px;
-  padding: 15px;
+  min-height: 318px;
+  padding: 15px 15px 20px;
   text-align: center;
 }
 .cart-image {
   border: none;
 }
 .card-title {
-  margin-top: 10px;
+  margin-top: 6px;
   margin-bottom: auto;
+  font-size: 18px;
+line-height: 20px;
 }
 .card-link {
   color: #000;
@@ -1373,15 +1379,18 @@ border-right: 6.5px solid transparent;
 }
 .old-price {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
   text-decoration: line-through;
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
 }
 .new-price {
   display: inline-block;
   position: relative;
   width: 122px;
   height: 38px;
-  margin-top: 10px;
+  margin-top: 9px;
   padding: 10px 20px;
   background-color: #eee;
   border-bottom-left-radius:2px;
@@ -1400,8 +1409,8 @@ border-right: 6.5px solid transparent;
   width:65px;
   height: 65px;
   position: absolute;
-  right: -5px;
-  top:0px;
+  right: -6px;
+  top:-1px;
   background: url(../img/new-flag.png) no-repeat;
   }
 .new-price::after{
@@ -1485,7 +1494,7 @@ border-right: 6.5px solid transparent;
   width: 300px;
   margin-left: -10px;
   margin-top: 42px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   padding: 10px;
   font-family: "PT Sans";
   font-weight: 400;
@@ -1497,7 +1506,7 @@ border-right: 6.5px solid transparent;
 .paginator span {
   display: inline-block;
   min-width: 16px;
-  height: 38px;
+  height: 36px;
   border-radius: 2px;
   padding: 0 10px;
   line-height: 40px;
@@ -1530,8 +1539,8 @@ border-color: rgba(255, 0, 0, 1);
 }
 .about{
   background-color: #f2f6f8;
-  padding-top: 80px;
-  padding-bottom: 56px;
+  padding-top: 68px;
+  padding-bottom: 54px;
 }
 .about h2{
   font-family: "Cuprum";
@@ -1539,9 +1548,9 @@ border-color: rgba(255, 0, 0, 1);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 24px;
-  margin-top: -21px;
+  margin-top: 0px;
   margin-left: 1px;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 .about p{
   font-size: 14px;
@@ -1567,14 +1576,13 @@ border-color: rgba(255, 0, 0, 1);
   float: left;
   color:#ffffff;
   width:350px;
-
-  margin-top:30px;
+  margin-top:33px;
   font-size: 18px;
   line-height: 24px;
 }
 .footer-top-list{
   float: right;
-  margin-top: 35px;
+  margin-top: 38px;
 }
 .footer-top-list a{
   text-decoration: none;
@@ -1598,7 +1606,7 @@ color: rgba(255, 255, 255, 0.5);
 .footer-bottom-list{
 float: right;
 margin-top: 35px;
-margin-bottom: 73px;
+margin-bottom: 72px;
 }
 .footer-bottom-list a{
   text-decoration: none;
@@ -1741,7 +1749,7 @@ float: left;
   line-height: 18px;
   padding-bottom: 12px;
   font-family: "Cuprum";
-  font-weight: regular;
+  font-weight: 400;
 }
 .fullname input,
 .email input{
