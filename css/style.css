@@ -326,6 +326,9 @@ background: url(../img/icon-search.png)  no-repeat center top ;
   overflow: hidden;
   text-decoration: none;
 }
+.user-data:active{
+  color:#b2b2b2;
+}
 .sign-out{
   position: absolute;
   width: 45px;
@@ -433,13 +436,24 @@ color: #bfc6ce
   vertical-align: middle;
   text-decoration: none;
 }
+.header-login{
+  background:#fff url(../img/icon-login.png)  no-repeat center top ;
+  background-position: 13px;
+  padding-left: 46px;
+}
 .header-login:hover,
 .header-register:hover{
   color: #ee3643;
 }
-.header-register:active,
+.header-login:hover{
+  background:#fff url(../img/icon-login-hover.png)  no-repeat center top ;
+  background-position: 13px;
+  padding-left: 46px;
+}
 .header-login:active{
-  background: #c5c5c5;
+  background:#fff url(../img/icon-login.png)  no-repeat center top ;
+  background-position: 13px;
+  padding-left: 46px;
 }
 .header-nav{
   min-height: 55px;
