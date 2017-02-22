@@ -1528,7 +1528,6 @@ border-right: 6.5px solid transparent;
 .custom-card-buy,
 .custom-card-bookmark {
   display: block;
-  padding: 10px 20px;
   width: 100%;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -1544,6 +1543,7 @@ border-right: 6.5px solid transparent;
   text-decoration: none;
   box-shadow: 0 3px 0 0 #367315;
   border-radius: 2px;
+  padding: 11px 20px 6px;
 }
 .custom-card-buy:hover{
   background: #5fbb2d;
@@ -1584,6 +1584,7 @@ border-right: 6.5px solid transparent;
   display: block;
   background-color: transparent;
   border: 3px solid #63a63e;
+  padding: 9px 20px 6px;
 }
 .catalog-item:hover .custom-card {
   display: block;
