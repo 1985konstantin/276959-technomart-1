@@ -1517,13 +1517,15 @@ border-right: 6.5px solid transparent;
   border-left: 18px solid #ee3643;
 }
 .custom-card {
-  display: none;
   position: absolute;
-  top: 95px;
+  top: 88px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 135px;
+  height: 38px;
   box-sizing: border-box;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 .custom-card-buy,
 .custom-card-bookmark {
@@ -1531,6 +1533,11 @@ border-right: 6.5px solid transparent;
   padding: 10px 20px;
   width: 100%;
   box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 .custom-card-buy {
   margin-bottom: 10px;
