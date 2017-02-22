@@ -1517,15 +1517,13 @@ border-right: 6.5px solid transparent;
   border-left: 18px solid #ee3643;
 }
 .custom-card {
+  display: none;
   position: absolute;
   top: 88px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 135px;
-  height: 38px;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: text-bottom;
 }
 .custom-card-buy,
 .custom-card-bookmark {
@@ -1578,7 +1576,6 @@ border-right: 6.5px solid transparent;
 .custom-card-buy:active{
   background: #518534;
   border-color: #518534;
-  border-radius: 2px;
 }
 .custom-card-bookmark:active{
   opacity: 0.5;
@@ -1587,7 +1584,6 @@ border-right: 6.5px solid transparent;
   display: block;
   background-color: transparent;
   border: 3px solid #63a63e;
-  border-radius: 2px;
 }
 .catalog-item:hover .custom-card {
   display: block;
