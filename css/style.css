@@ -1826,7 +1826,7 @@ color: rgba(187, 161, 116, 0.5);
 }
 .backcharge a:active
 {
-  -decoration: none;
+  text-decoration: none;
  color: #ee3643;
 }
 .pop-up{
@@ -1842,6 +1842,20 @@ color: rgba(187, 161, 116, 0.5);
   box-sizing: border-box;
   box-shadow: inset 0 -110px 0 0 #f1f1f1;
   position: relative;
+  display: none;
+}
+.modal-content-show {
+  display: block;
+}
+.pop-up-close{
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  top:11px;
+  right: 30px;
+  background: url(../img/Cross.png) no-repeat;
 }
 .fullname{
 float: left;
@@ -1900,15 +1914,6 @@ float: left;
   margin-top: 40px;
   border: transparent;
  }
-.pop-up::after{
- content: "";
- width:40px;
- height: 40px;
- position: absolute;
- right: 10px;
- top:10px;
- background: url(../img/Cross.png) no-repeat;
-}
 .pop-up_2{
   margin-top: 100px;
   width:620px;
